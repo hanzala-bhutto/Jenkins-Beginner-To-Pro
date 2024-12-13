@@ -1,0 +1,35 @@
+pipeline
+{
+    agent any
+    stages
+    {
+        stage("Clean Up Stage")
+        {
+            steps
+            {
+                echo "Stage 1 Clean Up"
+            }
+        }
+        stage("Clone Repo Stage")
+        {
+            steps
+            {
+                echo "Stage 2 Clone Repo"
+            }
+        }
+        stage("Build Stage")
+        {
+            steps
+            {
+                echo "Stage 3 Build Stage"
+            }
+        }
+        stage("Test Stage")
+        {
+            steps
+            {
+                echo "Stage 4 Test Stage"
+            }
+        }
+    }
+}
